@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution](https://your-solution-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/blog-preview-cadrd-with-responsive-font-size-CVoyu5Y6aP)
 - Live Site URL: [Live Site](https://matiasbastarrica.github.io/blog-preview-card-main/)
 
 ## My process
