@@ -1,0 +1,131 @@
+/* ### CSS VARIABLES ### */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+
+/* ### CSS RESET ### */
+
+html {
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* ### GENERAL STYLING */
+
+body {
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  background-color: var(--yellow);
+}
+
+a {
+  display: block;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* ### UTILITIES ### */
+
+.flex-spacer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ### BLOG-PREVIEW-CARD ### */
+
+.blog-preview-card {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 380px;
+  min-width: 365px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--gray-950);
+  color: var(--gray-950);
+  box-shadow: 8px 8px var(--gray-950);
+}
+
+.blog-preview-card header img {
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.blog-preview-card .card-title {
+  font-weight: 800;
+}
+
+.blog-preview-card .card-title:hover {
+  color: var(--yellow);
+}
+
+.blog-preview-card .card-title a {
+  text-decoration: none;
+  padding: 0.2rem 0;
+  color: inherit;
+}
+
+.blog-preview-card .card-title a:focus {
+  outline: 5px solid var(--yellow);
+}
+
+.blog-preview-card a.tag {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 800;
+  padding: 0.4rem 0.7rem;
+  background-color: var(--yellow);
+  display: inline-block;
+  align-self: flex-start;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.blog-preview-card a.tag:focus {
+  outline: 5px solid var(--gray-950);
+}
+
+.blog-preview-card .card-text {
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+.date {
+  font-size: 0.9rem;
+}
+
+.blog-preview-card footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.blog-preview-card footer img {
+  flex-basis: 40px;
+}
+
+.blog-preview-card .card-author {
+  font-weight: 800;
+}

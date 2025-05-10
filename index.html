@@ -11,9 +11,14 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Blog preview card</title>
-
+    <link rel="stylesheet" href="styles.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -27,14 +32,14 @@
   </head>
   <body>
     <main>
-      <article class="blog-preview-card">
-        <header>
+      <article class="blog-preview-card flex-spacer">
+        <header class="flex-spacer">
           <img src="./assets/images/illustration-article.svg" alt="" />
-          <p class="tag">Learning</p>
+          <a href="#" class="tag">Learning</a>
           <p class="date">
             Published <time datetime="2023-12-21">21 Dec 2023</time>
           </p>
-          <h1 class="card-title">HTML & CSS foundations</h1>
+          <h2 class="card-title"><a href="#">HTML & CSS foundations</a></h2>
         </header>
         <p class="card-text">
           These languages are the backbone of every website, defining structure,
